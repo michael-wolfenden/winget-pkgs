@@ -1,0 +1,20 @@
+# Created with Komac v1.11.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.5.0.schema.json
+
+PackageIdentifier: Smallstep.step
+PackageVersion: 0.25.1
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: step_0.25.1\bin\step.exe
+  PortableCommandAlias: step
+Installers:
+- Architecture: x64
+  InstallerUrl: https://dl.smallstep.com/gh-release/cli/gh-release-header/v0.25.1/step_windows_0.25.1_amd64.zip
+  InstallerSha256: 7EB4F98026C5766431E4FF22B24A4B8CFF7E29917AE92203D060A7AA9DEE35C9
+- Architecture: arm64
+  InstallerUrl: https://github.com/smallstep/cli/releases/download/v0.25.1/step_windows_0.25.1_amd64.zip
+  InstallerSha256: 7EB4F98026C5766431E4FF22B24A4B8CFF7E29917AE92203D060A7AA9DEE35C9
+  ReleaseDate: 2023-11-29
+ManifestType: installer
+ManifestVersion: 1.5.0
